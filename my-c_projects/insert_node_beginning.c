@@ -34,13 +34,6 @@ int main(void){
   /*link tmp for traversing to head*/
   tmp=head;
 
-/*before adding newnode*/
-while (tmp != NULL){
-  printf("the value of n element before new node is %d\n",tmp->n);
-  tmp=tmp->nxt;
-}
- printf("the value of n element before new node is %d\n",tmp->n);
-
   /*how to insert newnode at the beginning*/
   newnode->nxt=head;
   head=newnode;
